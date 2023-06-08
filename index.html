@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+</head>
+
+<body class="bg-indigo-900/80">
+    <h3 class="text-2xl bg-indigo-300 p-6 text-center mb-6">Ta te ti con una IA</h3>
+    <button class="rounded-full bg-violet-300 p-2 my-4 border-4 mx-auto flex flex-1 border-violet-500"
+        onclick="reiniciarPartida()">Reiniciar partida</button>
+    <div class="bg-indigo-400 p-2 rounded-xl w-1/2 mx-auto" id="tictactoe">
+        <button type="button" class="bg-indigo-500 p-5 rounded-xl mx-auto flex flex-1" disabled>
+            <svg class="animate-spin mr-3 h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                </path>
+            </svg>
+            Entrenando modelo...
+        </button>
+    </div>
+
+    <script src="./vistaTTT.js"></script>
+    <script src="./modeloTTT.js"></script>
+</body>
+
+</html>
